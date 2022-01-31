@@ -52,9 +52,7 @@ var configs = (function () {
     };
 })();
 
-/**
- * Your files here
- */
+
 var files = (function () {
     var instance;
     var Singleton = function (options) {
@@ -80,9 +78,7 @@ var files = (function () {
 
 var main = (function () {
 
-    /**
-     * Aux functions
-     */
+
     var isUsingIE = window.navigator.userAgent.indexOf("MSIE ") > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./);
 
     var ignoreEvent = function (event) {
@@ -97,10 +93,7 @@ var main = (function () {
     var isURL = function (str) {
         return (str.startsWith("http") || str.startsWith("www")) && str.indexOf(" ") === -1 && str.indexOf("\n") === -1;
     };
-    
-    /**
-     * Model
-     */
+
     var InvalidArgumentException = function (message) {
         this.message = message;
         // Use V8's native method if available, otherwise fallback
@@ -110,7 +103,7 @@ var main = (function () {
             this.stack = (new Error()).stack;
         }
     };
-    // Extends Error
+
     InvalidArgumentException.prototype = Object.create(Error.prototype);
     InvalidArgumentException.prototype.name = "InvalidArgumentException";
     InvalidArgumentException.prototype.constructor = InvalidArgumentException;
@@ -176,7 +169,7 @@ var main = (function () {
             elem.disabled = true;
         });
         this.prepareSideNav();
-        this.lock(); // Need to lock here since the sidenav elements were just added
+        this.lock(); 
         document.body.addEventListener("click", function (event) {
             if (this.sidenavOpen) {
                 this.handleSidenav(event);
@@ -223,7 +216,7 @@ var main = (function () {
             this.sidenav.appendChild(element);
             this.sidenavElements.push(element);
         }
-        // Shouldn't use document.getElementById but Terminal is already using loads of params
+       
         document.getElementById("sidenavBtn").addEventListener("click", this.handleSidenav.bind(this));
     };
 
