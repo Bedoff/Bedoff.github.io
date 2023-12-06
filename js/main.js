@@ -63,7 +63,7 @@ var files = (function () {
     };
     Singleton.defaultOptions = {
 	"about.txt": "\nNo information given\n",
-        "skills.txt": "\nProgramming Languages\n-------------------\nC#\nC++\nPython\nJavascript\nGoLang\nPhp\n\nWeb\n---\nHtml\nCss\n\nGame Engine\n--------------\nGold source\nSource\nSource2\n\nOther\n------------------\nAdobe photoshop\nAdobe illustrator\nGIMP\n\nDiğer\n-----\nAdobe after effects\nSony vegas pro\nBlender\nSketchup\nFL studio\nKripto borsa da teknik ve temel analiz\n\n---------\n\nYazdığım programlama dillerinin çoğunda sadece temelim var.\nİyi bir yazılımcı olduğum pek söylenemez.\n",
+        "skills.txt": "\nProgramming Languages\n-------------------\nC#\nC++\nPython\nJavascript\nGoLang\nPhp\n\nWeb\n---\nHtml\nCss\n\nGame Engine\n--------------\nGold source\nSource\nSource2\n\nOther\n------------------\nAdobe photoshop\nAdobe illustrator\nGIMP\n\Adobe after effects\nSony vegas pro\nBlender\nSketchup\nFL studio\",
         "contact.txt": "\nfor contact;\n\nGithub: Bedoff\nLinkedin: bedirhan-çelebi-069427209 \nTryHackMe: /outcry \nHackTheBox: Outcry #524000\nDiscord: OutCry#6223\ninstagram: @bed0ff_\nTwitter: @IS5416_\nSteam: https://steamcommunity.com/id/IS5416"
     };
     return {
